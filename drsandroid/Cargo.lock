@@ -468,8 +468,10 @@ dependencies = [
  "num-traits",
  "objc",
  "open",
+ "organya",
  "paste",
  "pelite",
+ "pkg-config",
  "rc-box",
  "sdl2",
  "sdl2-sys",
@@ -1295,6 +1297,16 @@ checksum = "2078c0039e6a54a0c42c28faa984e115fb4c2d5bf2208f77d1961002df8576f8"
 dependencies = [
  "pathdiff",
  "windows-sys 0.42.0",
+]
+
+[[package]]
+name = "organya"
+version = "0.1.0"
+dependencies = [
+ "byteorder",
+ "lazy_static",
+ "log",
+ "serde",
 ]
 
 [[package]]
