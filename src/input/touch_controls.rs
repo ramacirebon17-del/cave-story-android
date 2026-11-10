@@ -143,9 +143,6 @@ impl TouchControls {
                         let mut icon_x = x;
                         let icon_y = y;
 
-                        if self.interact_icon && x == 1 && y == 2 {
-                            icon_x = 3;
-                        }
 
                         batch.add_rect_tinted(
                             4.0 + 48.0 * x as f32 + 8.0 + left,
@@ -154,6 +151,16 @@ impl TouchControls {
                             &Rect::new_size(icon_x * 32, icon_y * 32, 32, 32),
                         );
                     }
+                }
+
+                // Interact
+                if self.interact_icon {
+                    batch.add_rect_tinted(
+                        canvas_size.0 - (4.0 + 48.0) + 8.0 - right,
+                        canvas_size.1 - (4.0 + 48.0) * 3.0 + 8.0 - bottom,
+                        color,
+                        &Rect::new_size(3 * 32, 2 * 32, 32, 32),
+                    );
                 }
 
                 // Jump

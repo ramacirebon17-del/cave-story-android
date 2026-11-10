@@ -264,7 +264,7 @@ impl Player {
             }
 
             if state.control_flags.control_enabled() {
-                let only_down = self.controller.move_down()
+                let only_down = self.controller.trigger_down()
                     && !self.controller.move_up()
                     && !self.controller.move_left()
                     && !self.controller.move_right()

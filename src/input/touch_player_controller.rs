@@ -34,6 +34,7 @@ bitfield! {
     pub next_weapon, _: 8;
     pub prev_weapon, _: 9;
     pub pause, set_pause: 10;
+    pub interact, set_interact: 11;
 }
 
 impl TouchPlayerController {
@@ -235,6 +236,16 @@ impl PlayerController for TouchPlayerController {
                             .is_some(),
                 );
 
+                self.state.set_interact(
+                    state.touch_controls.interact_icon
+                        && state.touch_controls.consume_click_in(Rect::new_size(
+                            state.canvas_size.0 as isize - 48 - right,
+                            state.canvas_size.1 as isize - (48 + 4) * 3 - bottom,
+                            48,
+                            48,
+                        )),
+                );
+
                 self.state.set_pause(
                     self.state.pause() || state.touch_controls.point_in(Rect::new_size(0, 0, 40, 40)).is_some(),
                 );
@@ -309,7 +320,7 @@ impl PlayerController for TouchPlayerController {
     }
 
     fn trigger_down(&self) -> bool {
-        self.trigger.down()
+        self.trigger.down() || self.trigger.interact()
     }
 
     fn trigger_right(&self) -> bool {
