@@ -139,8 +139,8 @@ impl TouchControls {
                 let batch = texture_set.get_or_load_batch(ctx, constants, "builtin/touch")?;
                 // Compact four-direction D-pad
                 batch.add_rect_scaled_tinted(
-                    4.0 + 8.0 + left,
-                    canvas_size.1 - 4.0 - 108.0 + 8.0 - bottom,
+                    4.0 + 4.0 + left,
+                    canvas_size.1 - 4.0 - 108.0 + 4.0 - bottom,
                     color,
                     0.75,
                     0.75,
