@@ -137,21 +137,13 @@ impl TouchControls {
             }
             TouchControlType::Controls => {
                 let batch = texture_set.get_or_load_batch(ctx, constants, "builtin/touch")?;
-                // Movement
-                for x in 0..3 {
-                    for y in 0..3 {
-                        let mut icon_x = x;
-                        let icon_y = y;
-
-
-                        batch.add_rect_tinted(
-                            4.0 + 48.0 * x as f32 + 8.0 + left,
-                            (canvas_size.1 - 4.0 - 48.0 * 3.0) + 48.0 * y as f32 + 8.0 - bottom,
-                            color,
-                            &Rect::new_size(icon_x * 32, icon_y * 32, 32, 32),
-                        );
-                    }
-                }
+                // Circular movement D-pad
+                batch.add_rect_tinted(
+                    4.0 + 8.0 + left,
+                    canvas_size.1 - 4.0 - 144.0 + 8.0 - bottom,
+                    color,
+                    &Rect::new_size(128, 0, 144, 144),
+                );
 
                 // Interact
                 if self.interact_icon {
