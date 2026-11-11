@@ -137,11 +137,13 @@ impl TouchControls {
             }
             TouchControlType::Controls => {
                 let batch = texture_set.get_or_load_batch(ctx, constants, "builtin/touch")?;
-                // Circular movement D-pad
-                batch.add_rect_tinted(
+                // Compact four-direction D-pad
+                batch.add_rect_scaled_tinted(
                     4.0 + 8.0 + left,
-                    canvas_size.1 - 4.0 - 144.0 + 8.0 - bottom,
+                    canvas_size.1 - 4.0 - 108.0 + 8.0 - bottom,
                     color,
+                    0.75,
+                    0.75,
                     &Rect::new_size(128, 0, 144, 144),
                 );
 
