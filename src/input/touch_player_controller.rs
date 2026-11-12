@@ -91,7 +91,7 @@ impl PlayerController for TouchPlayerController {
                     self.state.left()
                         || state
                             .touch_controls
-                            .point_in(Rect::new_size(left, state.canvas_size.1 as isize - bottom - 48 * 2, 48, 48))
+                            .point_in(Rect::new_size(left + 8, state.canvas_size.1 as isize - bottom - 36 * 2, 36, 36))
                             .is_some(),
                 );
 
@@ -100,7 +100,7 @@ impl PlayerController for TouchPlayerController {
                     self.state.up()
                         || state
                             .touch_controls
-                            .point_in(Rect::new_size(48 + left, state.canvas_size.1 as isize - bottom - 48 * 3, 48, 48))
+                            .point_in(Rect::new_size(36 + left + 8, state.canvas_size.1 as isize - bottom - 36 * 3, 36, 36))
                             .is_some(),
                 );
 
@@ -110,10 +110,10 @@ impl PlayerController for TouchPlayerController {
                         || state
                             .touch_controls
                             .point_in(Rect::new_size(
-                                48 * 2 + left,
-                                state.canvas_size.1 as isize - bottom - 48 * 2,
-                                48,
-                                48,
+                                36 * 2 + left + 8,
+                                state.canvas_size.1 as isize - bottom - 36 * 2,
+                                36,
+                                36,
                             ))
                             .is_some(),
                 );
@@ -123,7 +123,7 @@ impl PlayerController for TouchPlayerController {
                     self.state.down()
                         || state
                             .touch_controls
-                            .point_in(Rect::new_size(48 + left, state.canvas_size.1 as isize - bottom - 48, 48, 48))
+                            .point_in(Rect::new_size(36 + left + 8, state.canvas_size.1 as isize - bottom - 36, 36, 36))
                             .is_some(),
                 );
 
@@ -132,14 +132,14 @@ impl PlayerController for TouchPlayerController {
                     self.state.left()
                         || state
                             .touch_controls
-                            .point_in(Rect::new_size(left, state.canvas_size.1 as isize - bottom - 48 * 3, 48, 48))
+                            .point_in(Rect::new_size(left + 8, state.canvas_size.1 as isize - bottom - 36 * 3, 36, 36))
                             .is_some(),
                 );
                 self.state.set_up(
                     self.state.up()
                         || state
                             .touch_controls
-                            .point_in(Rect::new_size(left, state.canvas_size.1 as isize - bottom - 48 * 3, 48, 48))
+                            .point_in(Rect::new_size(left + 8, state.canvas_size.1 as isize - bottom - 36 * 3, 36, 36))
                             .is_some(),
                 );
 
@@ -149,10 +149,10 @@ impl PlayerController for TouchPlayerController {
                         || state
                             .touch_controls
                             .point_in(Rect::new_size(
-                                48 * 2 + left,
-                                state.canvas_size.1 as isize - bottom - 48 * 3,
-                                48,
-                                48,
+                                36 * 2 + left + 8,
+                                state.canvas_size.1 as isize - bottom - 36 * 3,
+                                36,
+                                36,
                             ))
                             .is_some(),
                 );
@@ -161,10 +161,10 @@ impl PlayerController for TouchPlayerController {
                         || state
                             .touch_controls
                             .point_in(Rect::new_size(
-                                48 * 2 + left,
-                                state.canvas_size.1 as isize - bottom - 48 * 3,
-                                48,
-                                48,
+                                36 * 2 + left + 8,
+                                state.canvas_size.1 as isize - bottom - 36 * 3,
+                                36,
+                                36,
                             ))
                             .is_some(),
                 );
@@ -174,14 +174,14 @@ impl PlayerController for TouchPlayerController {
                     self.state.left()
                         || state
                             .touch_controls
-                            .point_in(Rect::new_size(left, state.canvas_size.1 as isize - 48 - bottom, 48, 48))
+                            .point_in(Rect::new_size(left + 8, state.canvas_size.1 as isize - 36 - bottom, 36, 36))
                             .is_some(),
                 );
                 self.state.set_down(
                     self.state.down()
                         || state
                             .touch_controls
-                            .point_in(Rect::new_size(left, state.canvas_size.1 as isize - 48 - bottom, 48, 48))
+                            .point_in(Rect::new_size(left + 8, state.canvas_size.1 as isize - 36 - bottom, 36, 36))
                             .is_some(),
                 );
 
@@ -190,14 +190,14 @@ impl PlayerController for TouchPlayerController {
                     self.state.right()
                         || state
                             .touch_controls
-                            .point_in(Rect::new_size(48 * 2 + left, state.canvas_size.1 as isize - 48 - bottom, 48, 48))
+                            .point_in(Rect::new_size(36 * 2 + left + 8, state.canvas_size.1 as isize - 36 - bottom, 36, 36))
                             .is_some(),
                 );
                 self.state.set_down(
                     self.state.down()
                         || state
                             .touch_controls
-                            .point_in(Rect::new_size(48 * 2 + left, state.canvas_size.1 as isize - 48 - bottom, 48, 48))
+                            .point_in(Rect::new_size(36 * 2 + left + 8, state.canvas_size.1 as isize - 36 - bottom, 36, 36))
                             .is_some(),
                 );
 
