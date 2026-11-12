@@ -161,7 +161,7 @@ impl TouchControls {
                 batch.add_rect_tinted(
                     canvas_size.0 - (4.0 + 48.0) + 8.0 - right,
                     canvas_size.1 - (4.0 + 48.0) + 8.0 - bottom,
-                    color,
+                    (255, 255, 255, 220),
                     &Rect::new_size(3 * 32, 32, 32, 32),
                 );
 
@@ -169,7 +169,7 @@ impl TouchControls {
                 batch.add_rect_tinted(
                     canvas_size.0 - (4.0 + 48.0) + 8.0 - right,
                     canvas_size.1 - (4.0 + 48.0) * 2.0 + 8.0 - bottom,
-                    color,
+                    (255, 255, 255, 220),
                     &Rect::new_size(3 * 32, 0, 32, 32),
                 );
 

@@ -191,6 +191,7 @@ impl BuiltinFS {
                                 vec![
                                     FSNode::File("en.json", include_bytes!("builtin/builtin_data/locale/en.json")),
                                     FSNode::File("jp.json", include_bytes!("builtin/builtin_data/locale/jp.json")),
+                                FSNode::File("id.json", include_bytes!("builtin/builtin_data/locale/id.json")),
                                 ],
                             ),
                         ],

@@ -1,0 +1,225 @@
+{
+  "name": "Bahasa Indonesia",
+  "font": "csfont.fnt",
+  "font_scale": "0.5",
+  "common": {
+    "name": "Cave Story",
+    "back": "< Kembali",
+    "yes": "Ya",
+    "no": "Tidak",
+    "on": "AKTIF",
+    "off": "NONAKTIF"
+  },
+  "menus": {
+    "main_menu": {
+      "start": "Mulai Permainan",
+      "challenges": "Tantangan",
+      "options": "Pengaturan",
+      "editor": "Editor",
+      "jukebox": "Pemutar Musik",
+      "quit": "Keluar"
+    },
+    "pause_menu": {
+      "resume": "Lanjutkan",
+      "retry": "Coba Lagi",
+      "options": "Pengaturan",
+      "title": "Menu Utama",
+      "title_confirm": "Kembali ke menu utama?",
+      "quit": "Keluar",
+      "quit_confirm": "Keluar dari permainan?",
+      "add_player2": "Tambah Pemain 2",
+      "drop_player2": "Hapus Pemain 2"
+    },
+    "save_menu": {
+      "new": "Simpan Baru",
+      "delete_info": "Tekan Kanan untuk Menghapus",
+      "delete_confirm": "Hapus?",
+      "invalid_save": "Data Simpanan Tidak Valid"
+    },
+    "difficulty_menu": {
+      "title": "Pilih Tingkat Kesulitan",
+      "easy": "Mudah",
+      "normal": "Normal",
+      "hard": "Sulit",
+      "difficulty_name": "Kesulitan: {difficulty}",
+      "unknown": "(tidak diketahui)"
+    },
+    "coop_menu": {
+      "title": "Pilih Jumlah Pemain",
+      "one": "Pemain Tunggal",
+      "two": "Dua Pemain"
+    },
+    "skin_menu": {
+      "title": "Pilih Penampilan Pemain 2",
+      "label": "Penampilan:"
+    },
+    "challenge_menu": {
+      "start": "Mulai",
+      "no_replay": "Tidak Ada Rekaman",
+      "replay_best": "Putar Rekaman Terbaik",
+      "replay_last": "Putar Rekaman Terakhir",
+      "delete_replay": "Hapus Rekaman Terbaik"
+    },
+    "challenges_menu": {
+      "empty_mod_name": "Mod Tanpa Nama",
+      "empty_mod_description": "Tidak Ada Deskripsi"
+    },
+    "options_menu": {
+      "graphics": "Grafis...",
+      "graphics_menu": {
+        "window_mode": {
+          "entry": "Mode Tampilan:",
+          "windowed": "Mode Jendela",
+          "fullscreen": "Layar Penuh"
+        },
+        "lighting_effects": "Efek Pencahayaan:",
+        "weapon_light_cone": "Sorotan Cahaya Senjata:",
+        "screen_shake": {
+          "entry": "Intensitas Getaran Layar:",
+          "full": "1x",
+          "half": "0,5x",
+          "off": "Mati"
+        },
+        "motion_interpolation": "Interpolasi Gerakan:",
+        "subpixel_scrolling": "Pengguliran Subpiksel:",
+        "original_textures": "Tekstur Asli:",
+        "seasonal_textures": "Tekstur Musiman:",
+        "renderer": "Perender:",
+        "vsync_mode": {
+          "entry": "V-Sync:",
+          "uncapped": "Tanpa Batas",
+          "uncapped_desc": "V-Sync Mati.",
+          "vsync": "Aktif",
+          "vsync_desc": "V-Sync Aktif.",
+          "vrr_1x": "G-/FreeSync - Sesuaikan dengan Tickrate",
+          "vrr_1x_desc": "Berusaha menyamakan satu penyegaran layar dengan setiap tick game.",
+          "vrr_auto": "G-/FreeSync - Pengali Otomatis",
+          "vrr_auto_desc": "Memilih pengali penyegaran layar per tick terbaik."
+        },
+        "aspect_ratio": {
+          "entry": "Rasio Aspek:",
+          "default": "Bawaan",
+          "unrestricted": "Tidak Dibatasi",
+          "stretch": "Membentang"
+        },
+        "scaling_mode": {
+          "entry": "Penskalaan:",
+          "integer": "Bilangan Bulat",
+          "scaled": "Disesuaikan"
+        },
+        "inset_mode": {
+          "entry": "Area Terpotong Layar:",
+          "fill_screen": "Penuhi Layar",
+          "fit_safe_area": "Sesuaikan Area Aman"
+        }
+      },
+      "sound": "Suara...",
+      "sound_menu": {
+        "music_volume": "Volume Musik",
+        "effects_volume": "Volume Efek Suara",
+        "bgm_interpolation": {
+          "entry": "Interpolasi Musik Latar:",
+          "linear": "Linear",
+          "linear_desc": "Cepat, mirip versi freeware di Vista ke atas",
+          "cosine": "Kosinus",
+          "cosine_desc": "Interpolasi kosinus",
+          "cubic": "Kubik",
+          "cubic_desc": "Interpolasi kubik",
+          "linear_lp": "Linear+LP",
+          "linear_lp_desc": "Paling lambat, mirip versi freeware di XP",
+          "nearest": "Terdekat",
+          "nearest_desc": "Paling cepat, kualitas terendah"
+        },
+        "soundtrack": "Soundtrack: {soundtrack}"
+      },
+      "controls": "Kontrol...",
+      "controls_menu": {
+        "display_touch_controls": "Tampilkan Kontrol Sentuh:"
+      },
+      "language": "Bahasa...",
+      "language_menu": {
+        "warnings": {
+          "different_type": "{icon} - memiliki jenis berkas data berbeda (dapat menghasilkan data simpanan yang tidak kompatibel dengan bahasa lain)",
+          "no_data": "{icon} - data terjemahan tidak ditemukan (hanya menu yang diterjemahkan)"
+        }
+      },
+      "behavior": "Perilaku...",
+      "behavior_menu": {
+        "game_timing": {
+          "entry": "Kecepatan Game:",
+          "50tps": "50 TPS (Freeware)",
+          "60tps": "60 TPS (CS+)"
+        },
+        "pause_on_focus_loss": "Jeda Saat Tidak Aktif:",
+        "cutscene_skip_method": {
+          "entry": "Metode Melewati Cutscene:",
+          "hold": "Tahan untuk Melewati",
+          "fastforward": "Percepat",
+          "auto": "Otomatis"
+        },
+        "discord_rpc": "Status Aktivitas Discord:",
+        "allow_strafe": "Izinkan Gerakan Menyamping:"
+      },
+      "links": "Tautan...",
+      "advanced": "Lanjutan...",
+      "advanced_menu": {
+        "open_user_data": "Buka Folder Data Pengguna",
+        "open_game_data": "Buka Folder Data Game",
+        "make_portable": "Jadikan Folder Pengguna Portabel"
+      },
+      "portable_menu": {
+        "explanation": "Ini akan membuat folder data pengguna lokal dan menyalin pengaturan serta data simpananmu.",
+        "restart_question": "Muat ulang game untuk menggunakan lokasi baru?",
+        "restart": "Simpan dan Kembali ke Menu Utama",
+        "cancel": "Batal"
+      }
+    },
+    "controls_menu": {
+      "select_player": {
+        "entry": "Pilih Pemain:",
+        "player_1": "Pemain 1",
+        "player_2": "Pemain 2"
+      },
+      "controller": {
+        "entry": "Pengendali...",
+        "keyboard": "Keyboard",
+        "touch_controls_or_keyboard": "Kontrol Sentuh/Keyboard"
+      },
+      "rebind": "Atur Ulang Tombol...",
+      "rebind_menu": {
+        "up": "Atas",
+        "down": "Bawah",
+        "left": "Kiri",
+        "right": "Kanan",
+        "jump": "Lompat",
+        "shoot": "Tembak",
+        "prev_weapon": "Senjata Sebelumnya",
+        "next_weapon": "Senjata Berikutnya",
+        "inventory": "Inventaris",
+        "map": "Peta",
+        "skip": "Lewati",
+        "strafe": "Gerak Menyamping",
+        "menu_ok": "Pilih/Konfirmasi",
+        "menu_back": "Kembali/Batal"
+      },
+      "rebind_confirm_menu": {
+        "title": "Tekan tombol untuk \"{control}\"",
+        "cancel": "(Esc untuk membatalkan)",
+        "cancel_touch": "(Esc atau sentuh layar untuk membatalkan)"
+      },
+      "rumble": "Getaran:",
+      "reset_confirm": "Atur Ulang...",
+      "reset_confirm_menu_title": "Atur ulang kontrol?"
+    }
+  },
+  "soundtrack": {
+    "organya": "Organya",
+    "remastered": "Remaster",
+    "new": "Baru",
+    "famitracks": "Famitracks",
+    "ridiculon": "Ridiculon"
+  },
+  "game": {
+    "cutscene_skip": "Tahan {key} untuk melewati cutscene"
+  }
+}
